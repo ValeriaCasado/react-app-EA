@@ -1,0 +1,91 @@
+
+:root {
+  --theme-dark-blue: #0F233D;
+  --theme-medium-blue: #1F3660;
+  --theme-light-blue: #91A3B1;
+  --theme-yellow: #F0CA83;
+  --theme-snow-white: #FEFAF8;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+ul.navbar-fp {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position:relative;
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-wrap:wrap;
+  flex-wrap:wrap;
+  -ms-flex-align:center;
+  align-items:right;
+  background-color: var(--theme-snow-white);
+
+}
+
+div.navbar-fp-container {
+  max-width: 55rem;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+ul.navbar-fp li {
+  display:inline-block;
+  padding:2rem;
+  -ms-flex-preferred-size:0;
+  flex-basis:0;
+  -ms-flex-positive:1;
+  flex-grow:1;
+  text-align:center;
+  -ms-flex:1 1 auto;
+  flex:1 1 auto;
+  text-align:center
+}
+
+
+ul.navbar-fp li:hover {
+  color: white !important;
+  background-color: var(--theme-light-blue);
+  transition: color 0.5 linear;
+  transition: background-color 0.5s linear;
+  
+}
+
+ul.navbar-fp a {
+  text-decoration: none;
+  color: var(--theme-dark);
+}
+
+ul.navbar-fp a:visited {
+  text-decoration: none;
+}
+ul.navbar-fp a:link{
+
+}
+
+#navbar-fp-brand {
+  display:inline-block;
+  padding-top:.3125rem;
+  padding-bottom:.3125rem;
+  margin-right:1rem;
+  font-size:1.25rem;
+  line-height:inherit;
+  white-space:nowrap;
+  max-width: 4rem;
+}
+
