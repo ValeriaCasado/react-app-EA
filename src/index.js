@@ -2,10 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './js/App.js';
-import Navbar from './js/Navbar.js'
+import Navbar from './js/Navbar.js';
+import NavbarLeft from './js/NavbarLeft.js';
+import FrontPageImg from './js/FrontPageImg.js';
+import MyComponent from './js/Parallax.js'
 import * as serviceWorker from './serviceWorker';
 
+
+
+ReactDOM.render(<NavbarLeft/>, document.getElementById('navbarleft'));
 ReactDOM.render(<Navbar/>, document.getElementById('navbar'));
+ReactDOM.render(<MyComponent/>, document.getElementById('front-page-image'));
 ReactDOM.render(<App/>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

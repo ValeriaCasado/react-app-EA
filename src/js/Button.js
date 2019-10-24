@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 
-class InputButtom extends Component {
-    render() {
-        return (
-            <button color="primary">Danger!</button>
-          );
-        }
-    }
-export default InputButtom;
+class Button extends Component {
+    constructor() {
+        super();
+        this.state = {design: "first", inside: "Discover More"}
 
+    }
+    render() {
+        return <button className={this.props.design}>{this.props.inside}</button>
+    }
+}
+
+export default Button;

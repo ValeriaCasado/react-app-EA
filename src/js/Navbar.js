@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import logo from '../html5.svg';
+import logo from '../img/icons/massimo-logo.png';
 
 
 class Navbar extends Component {
     render() {
         return (
             <ul className="navbar-fp">
-                
-                <li id="navbar-fp-brand" > <img id="navbar-fp-brand" src={logo} className="App-logo" alt="logo" /></li>
+                <span className="navbar-fp-brand" > <img src={logo} className="App-logo" alt="logo" width="180rem"/></span>
                 <div className="navbar-fp-container">
                 <li><a href="default.asp">PROPERTIES</a></li>
                 <li><a href="news.asp">LEASE</a></li>
