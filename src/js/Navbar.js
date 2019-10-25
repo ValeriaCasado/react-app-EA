@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from '../img/icons/massimo-logo.png';
+import logo from '../img/icons/logo.png';
 import menu from '../img/icons/menu.svg'
 
 
@@ -7,7 +7,6 @@ class Navbar extends Component {
     render() {
         return (
             <ul className="navbar-fp">
-                <span className="navbar-fp-brand" > <img src={logo} className="App-logo" alt="logo" width="180rem"/></span>
                 <div className="navbar-fp-container">
                 <li><a href="default.asp">BUY</a></li>
                 <li><a href="news.asp">LETTINGS</a></li>

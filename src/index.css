@@ -1,11 +1,11 @@
 
 :root {
-  --theme-dark-blue: #0F233D;
+  --theme-dark-blue: #656764;
   --theme-medium-blue: #1F3660;
   --theme-light-blue: #91A3B1;
   --theme-yellow: #F0CA83;
   --theme-yellow-light: #fff2d9;
-  --theme-snow-white: #FEFAF8;
+  --theme-snow-white: #F3F3F1;
   --margin-top-and-left: 5.5rem;
 }
 
@@ -26,7 +26,7 @@ code {
     monospace;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 850px) {
   :root {
     --margin-top-and-left: 0px;
   }
@@ -98,26 +98,6 @@ ul.navbar-fp a:link{
 }
 
 
-.navbar-fp-brand {
-  display:inline-block;
-  padding: 0 ;
-  margin: 0px 0px 0px 0px;
-  max-width: 4rem;
-}
-
-.navbar-left {
-  height: 100%;
-  margin-left:auto;
-  margin-right: auto;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: var(--theme-snow-white);
-  overflow-x: hidden;
-  padding-top: 6rem;
-}
-
 .navbar-fp-menu {
   display: inline;
   padding:0;
@@ -138,6 +118,20 @@ ul.navbar-fp a:link{
     cursor: pointer; /* Add a pointer on hover */
   }
 
+  
+.navbar-left {
+  height: 100%;
+  margin-left:auto;
+  margin-right: auto;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--theme-snow-white);
+  overflow-x: hidden;
+  padding-top: 0rem;
+  margin-top: 0px;
+}
 
 .navbar-left img {
   padding: 1.5rem;
@@ -148,15 +142,22 @@ ul.navbar-fp a:link{
   display: block;
 }
 
-.navbar-left img:hover{
-  padding: 0rem 0rem 0rem 0rem;
-  width: 3rem;
+.navbar-left-brand img{
+  width:6.5rem;
+  padding: 0rem 0rem 5rem 0rem !important;
+  margin: 0px !important;
+
+}
+
+
+.navbar-left a img:hover{
+  padding: 1.7rem 1.5rem 1.7rem 1.7rem;
+  width: 2.4rem;
   
 }
 
 .front-page-img {
   margin:0;
-  
   width: 100%;
 }
 
