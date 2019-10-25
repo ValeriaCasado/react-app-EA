@@ -4,12 +4,12 @@ import './index.css';
 import App from './js/App.js';
 import Navbar from './js/Navbar.js';
 import NavbarLeft from './js/NavbarLeft.js';
-import FrontPageImg from './js/FrontPageImg.js';
+import OverlayWidget from './js/OverlayWidget.js';
 import MyComponent from './js/Parallax.js'
 import * as serviceWorker from './serviceWorker';
 
 
-
+//ReactDOM.render(<OverlayWidget/>, document.getElementById('overlay-widget'));
 ReactDOM.render(<NavbarLeft/>, document.getElementById('navbarleft'));
 ReactDOM.render(<Navbar/>, document.getElementById('navbar'));
 ReactDOM.render(<MyComponent/>, document.getElementById('front-page-image'));
