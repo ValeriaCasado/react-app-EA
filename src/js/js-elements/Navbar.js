@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import logo from '../../img/icons/massimo-logo.png';
-import ContactPage from '../js-components/ContactPage.js/index.js'
+
 
 
 class Navbar extends Component {
