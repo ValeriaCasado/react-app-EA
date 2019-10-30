@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import reddit from '../img/icons2/reddit.svg';
-import youtube from '../img/icons2/youtube.svg';
-import linkedin from '../img/icons2/linkedin.svg';
-import twitter from '../img/icons2/twitter.svg';
-import instagram from '../img/icons2/instagram.svg';
+import reddit from '../../img/icons2/reddit.svg';
+import youtube from '../../img/icons2/youtube.svg';
+import linkedin from '../../img/icons2/linkedin.svg';
+import twitter from '../../img/icons2/twitter.svg';
+import instagram from '../../img/icons2/instagram.svg';
 
 class NavbarLeft extends Component {
     render() {
