@@ -5,7 +5,7 @@ import Button from './Button';
 class FrontPageImage extends Component {
     render() {
         return (
-            <div class="container">
+            <div class="container-mainpage">
             <div class="parallax"></div>
 		    <div class="overlay">
 			<h1>Main Title Saying Something</h1>

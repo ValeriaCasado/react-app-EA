@@ -14,11 +14,12 @@ class App extends Component {
       <div className="app-container">
       <ul className="navbar-fp">
                 <div className="navbar-fp-container">
-                <li><a href="default.asp">BUY</a></li>
+                <li><a href="default.asp">SALES</a></li>
                 <li><a href="news.asp">LETTINGS</a></li>
                 <li><a href="/contact">LOCAL AREA</a></li>
                 <li><a href="about.asp">MARKETING</a></li>
                 <li><a href="/contact">ABOUT</a></li>
+                <li><a href="/contact">CONTACT</a></li>
                 </div>
       </ul>
       <Route path="/" exact component={MainPage} />

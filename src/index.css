@@ -1,17 +1,27 @@
 
 :root {
-  --theme-dark-blue: #656764;
-  --theme-medium-blue: #1F3660;
-  --theme-light-blue: #91A3B1;
+  --theme-dark-blue: #585F67;
+  --theme-medium-blue: #92959A;
+  --theme-light-blue: #D8DCDF;
   --theme-yellow: #F0CA83;
   --theme-yellow-light: #fff2d9;
   --theme-snow-white: #F3F3F1;
   --margin-top-and-left: 5.5rem;
   --half-screen: 50vw;
+  --navbar-left-width: 6.5rem;
 }
 
 p {
   color: var(--theme-medium-blue);
+}
+
+input:focus, 
+textarea:focus,
+input:-webkit-autofill {
+  box-shadow: none;
+  outline: 0;
+  background-color: white !important;
+  transition: 1s;
 }
 
 h1 { font-family: Helvetica; font-size: 20px; font-style: normal; font-variant: small-caps; font-weight: 100; line-height: 48px; }
@@ -33,6 +43,7 @@ code {
   :root {
     --margin-top-and-left: 0px;
     --half-screen: 100%;
+    --navbar-left-width: 0rem;
   }
   .navbar-left  {
     display: none;
@@ -40,10 +51,31 @@ code {
   .cm-half {
     width: 100%;
   }
+
+  .cm-fourth {
+    width: 50vw;
+  }
+
+  .callText {
+    display: inline-block;
+    max-width: 100% !important;
+  }
+  .email-form {
+    float: left;
+    display: block;
+  }
 }
 
-.container {
-  margin-left: var(--margin-top-and-left);
+.cm-fourth {
+  width:25vw;
+}
+
+.zerospace {
+  padding: 0;
+  margin: 0;
+}
+.container-mainpage {
+  margin-left: var(--navbar-left-width);
 }
 
 ul.navbar-fp {
@@ -61,7 +93,6 @@ ul.navbar-fp {
 }
 
 div.navbar-fp-container {
-  max-width: 55rem;
   padding: 0;
   margin:0;
   margin-left:auto;
@@ -71,7 +102,7 @@ div.navbar-fp-container {
 ul.navbar-fp li {
   display:inline-block;
   margin: 0;
-  padding:2.4rem;
+  padding:1.5rem;
   -ms-flex-preferred-size:0;
   flex-basis:0;
   -ms-flex-positive:1;
@@ -101,27 +132,28 @@ ul.navbar-fp a:visited {
   text-decoration-color: var(--theme-yellow);
 }
 
-ul.navbar-fp a:link{
-
-}
-
-
 .navbar-fp-menu {
   display: inline;
   padding:0;
   margin: 2rem 2.5rem 1rem 0rem !important;
 }
+
+img.TR-widget {
+  margin:auto;
+  width: 100%;
+  height: 100%;
+}
 .overlay-widget {
-    position: fixed; /* Sit on top of the page content */
-    display: none; /* Hidden by default */
-    width: 50px; /* Full width (cover the whole page) */
-    height: 50px; /* Full height (cover the whole page) */
-    top: 0;
-    left: 0;
+    transition: 1s;
+    position: fixed; /* Sit on top of the page content */ /* Hidden by default */
+ /* Full height (cover the whole page) */
+    left: 30px;
     right: 0;
-    bottom: 0;
+    bottom: 30px;
+    border-radius: 50%;
     margin-top: 100px;
-    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    background-color: var(--theme-dark-blue);
+    opacity: 0.4; /* Black background with opacity */
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
     cursor: pointer; /* Add a pointer on hover */
   }
@@ -173,9 +205,10 @@ ul.navbar-fp a:link{
 
 .parallax {
   /* The image used */
-  background: url("./img/large-images/property-img-1.png");
+  background: url("./img/large-images/parallax.jpg");
+  
   /* Full height */
-  height: 700px;
+  height: 550px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -308,8 +341,14 @@ button.third {
   border-radius: 5px;
 }
 
+
 .container-page-container{
   width: 100%;
+}
+
+.contact-page-section {
+  width: 5px;
+  background-color: var(--theme-medium-blue);
 }
 .contact-page-container h1 {
   max-width: 40rem;
@@ -343,40 +382,3 @@ button.third {
   animation-name: rubberBand;
 }
 
-
-@keyframes rubberBand {
-  from {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-
-  30% {
-    -webkit-transform: scale3d(1.25, 0.75, 1);
-    transform: scale3d(1.25, 0.75, 1);
-  }
-
-  40% {
-    -webkit-transform: scale3d(0.75, 1.25, 1);
-    transform: scale3d(0.75, 1.25, 1);
-  }
-
-  50% {
-    -webkit-transform: scale3d(1.15, 0.85, 1);
-    transform: scale3d(1.15, 0.85, 1);
-  }
-
-  65% {
-    -webkit-transform: scale3d(0.95, 1.05, 1);
-    transform: scale3d(0.95, 1.05, 1);
-  }
-
-  75% {
-    -webkit-transform: scale3d(1.05, 0.95, 1);
-    transform: scale3d(1.05, 0.95, 1);
-  }
-
-  to {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-}

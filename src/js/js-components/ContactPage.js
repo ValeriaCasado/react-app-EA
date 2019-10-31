@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import CallText from '../js-elements/CallText.js';
+import ContactForm from '../js-elements/ContactForm.js';
+import OverlayWidget from '../js-elements/OverlayWidget.js';
 
 
 export default class ContactPage extends Component {
@@ -9,13 +11,8 @@ export default class ContactPage extends Component {
                 <div id="contact-section"></div>
                 <h1>Send us your message by filling out the form below.
                 One of our advisors will be happy to get in touch with you.</h1>
-                <form className="email-form cm-half" action="/action_page.php">
-                    <input type="text" name="firstname" placeholder="First Name"></input>
-                    <input type="text" name="lastname" placeholder="Last Name"></input>
-                    <input type="text" name="lastname" placeholder="Subject"></input>
-                    <textarea type="textarea" name="body" rows="8" placeholder="Content"></textarea>
-                    <a type="submit" value="Submit">Submit</a>
-                </form> 
+                    <OverlayWidget></OverlayWidget>
+                    <ContactForm className="email-form cm-half"></ContactForm>
                     <CallText className="callText"></CallText>
             </div>
         )
