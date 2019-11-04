@@ -6,7 +6,6 @@
   --theme-yellow: #F0CA83;
   --theme-yellow-light: #fff2d9;
   --theme-snow-white: #F3F3F1;
-  --margin-top-and-left: 5.5rem;
   --half-screen: 50vw;
   --navbar-left-width: 5rem;
 }
@@ -27,7 +26,7 @@ input:-webkit-autofill {
 h1 { font-family: Helvetica; font-size: 20px; font-style: normal; font-variant: small-caps; font-weight: 100; line-height: 48px; }
 
 body {
-  margin: 0;
+  margin: 0; 
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -41,11 +40,25 @@ code {
 
 @media only screen and (max-width: 850px) {
   :root {
-    --margin-top-and-left: 0px;
     --half-screen: 100%;
-    --navbar-left-width: 0rem;
+    --navbar-left-width: 1rem;
   }
   .navbar-left  {
+    display: none;
+  }
+
+  .gallery {
+    width: 100% !important;
+    margin: 0rem !important;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .gallery-text{
+    font-size: 12px!important;
+  }
+
+  .navbar-right {
     display: none;
   }
   .cm-half {
@@ -56,6 +69,10 @@ code {
     width: 50vw;
   }
 
+  .signature {
+    text-align: right !important;
+    font-size: 14px;
+  }
   .callText {
     display: inline-block;
     max-width: 100% !important;
@@ -73,6 +90,11 @@ code {
 .zerospace {
   padding: 0;
   margin: 0;
+}
+
+.container {
+  width:100%;
+  text-align: center;
 }
 .container-mainpage {
   margin-left: var(--navbar-left-width);
@@ -399,9 +421,8 @@ button.third {
 }
 
 .gallery {
-  margin-left:auto;
-  margin-right:auto;
-  margin-top: 1rem;
+  margin-left:2.5rem;
+  margin-right:2.5rem;
   width: calc(100vw - var(--navbar-left-width));
   height: 510px;
 }
@@ -412,17 +433,24 @@ button.third {
   margin: 1px;
 }
 
-.i01 {
+.o01 {
   background-image: url('./img/large-images/Large-image-01.jpg') !important;
 }
 
-.i02 {
+.o02 {
   background-image: url('./img/large-images/Large-image-02.jpg');
 }
 
-.i03 {
+.o03 {
   background: url("./img/large-images/Large-image-03.jpg");
+}
 
+.i01 {
+  background-image: url("./img/large-images/Large-image-inner-01.jpg");
+}
+
+.i02 {
+  background-image: url("./img/large-images/Large-image-inner-02.jpg");
 }
 .gallery-item:hover {
   opacity: 0.5;
@@ -430,14 +458,17 @@ button.third {
 }
 
 .gallery-text {
-  margin-top: 5%;
-  font-size: 24px;
+  width: 100%;
+  max-width: 25vw;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
   text-align: center;
   color: white;
   opacity: 0;
 }
 
-.gallery-item:hover .gallery-text{
+.fadein-effect, .gallery-item:hover .gallery-text{
   opacity: 1;
-  transition: 1s;
+  transition: 0.5s;
 }
