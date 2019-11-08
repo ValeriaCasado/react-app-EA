@@ -26,7 +26,7 @@ class OverlayWidget extends Component {
     
     render() {
         return (
-            <div onClick={this.changeWidth} style={{width: this.state.width, height: this.state.height, right: this.props.floatPos, left:this.props.leftPos}} className="overlay-widget"><a href="/"><img className="TR-widget" src={RTlogo}></img></a></div>
+            <div onClick={this.changeWidth} style={{width: this.state.width, height: this.state.height, right: this.props.rightPos, left:this.props.leftPos, bottom: this.props.bottom, top: this.props.top}} className="overlay-widget"><a href="/"><img className="TR-widget" src={RTlogo}></img></a></div>
          );
     }
 }

@@ -8,11 +8,11 @@ export default class MainPage extends Component {
 
     render() {
         return (
-            <div>
+            <div className="container-mainpage">
             <NavbarLeft side="left" left="0"></NavbarLeft>
             <NavbarRight></NavbarRight>
             <Gallery></Gallery>
-            <OverlayWidget leftPos="90%"></OverlayWidget>
+            <OverlayWidget leftPos="20px" bottom="50px"></OverlayWidget>
             </div>
         );
     }
