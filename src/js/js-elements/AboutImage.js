@@ -5,13 +5,10 @@ import Button from '../js-elements/Button.js';
 class AboutImage extends Component {
     render() {
         return (
-                <div className={`p01 underlay-image-section ${ this.props.className }`} >
-                    <div className="overlay-image-section">
-                        <h1>Title about estate agents</h1>
-                        <p>We’re end-to-end real estate advisors and negotiators. 
-                        We tell you how it is. We are not brash, we’re matter of fact.
-                        Why? Because we work for you, not the market.
-                        Achieving the best outcome for your situation is our motivation</p>
+                <div className={`underlay-image-section ${ this.props.className }`} style={{height: this.props.height}}>
+                    <div className="overlay-image-section" style={{height: this.props.insideHeight}}>
+                        <h1>{this.props.title}</h1>
+                        <p>{this.props.content}</p>
                         <Button design="first" inside="Learn more"></Button>
                     </div>
                 </div>

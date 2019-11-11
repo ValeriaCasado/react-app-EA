@@ -39,13 +39,13 @@ export default class Footer extends Component {
                     <p>GU2 7YG</p>
                 </div>
                 <div className="cm-two-thirds">
-                    <div className="row">
-                    <div className="column cm-half">
+                    <div className="">
+                    <div className="column">
                         <p className="important">- +44 (0)203 6952848 </p>
                         <p className="important">- enquiries@email.com</p>
                         <p> </p>
                     </div>
-                    <div className="column cm-half" style={footerMap}>
+                    <div className="column" style={footerMap}>
                         <p>
                         <iframe 
                         width="300" 
