@@ -5,6 +5,7 @@ import OverlayWidget from '../js-elements/OverlayWidget.js';
 import Gallery from '../js-elements/Gallery.js'
 import AboutImage from '../js-elements/AboutImage.js';
 import Reveal from 'react-reveal/Reveal';
+import SearchBar from '../js-elements/SearchBar.js'
 
 export default class MainPage extends Component {
 
@@ -16,6 +17,7 @@ export default class MainPage extends Component {
             <Reveal>
             <Gallery></Gallery>
             </Reveal>
+            <SearchBar></SearchBar>
             <Reveal>
             <div className="row">
                 <AboutImage className="column makespace cm-half o01" 
