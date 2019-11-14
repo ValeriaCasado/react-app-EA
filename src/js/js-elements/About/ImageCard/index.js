@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import '../js-elements/Button.js'
-import Button from '../js-elements/Button.js';
+/* eslint-disable no-unused-vars */
+import React, { Component }  from 'react';
+import Button from '../../Button';
 
-class AboutImage extends Component {
+class ImageCard extends Component {
     render() {
         return (
                 <div className={`underlay-image-section ${ this.props.className }`} style={{height: this.props.height}}>
@@ -16,4 +16,4 @@ class AboutImage extends Component {
     }
 }
 
-export default AboutImage;
+export default ImageCard;

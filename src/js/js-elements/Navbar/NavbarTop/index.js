@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 
-
-
-class Navbar extends Component {
+class NavbarTop extends Component {
     render() {
         return (
             <ul className="navbar-fp">
@@ -17,4 +15,4 @@ class Navbar extends Component {
         )
       }
 }
-export default Navbar;
+export default NavbarTop;

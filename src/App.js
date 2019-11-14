@@ -5,8 +5,9 @@ import AboutPage from './js/js-components/AboutPage.js';
 import LocalareaPage from './js/js-components/LocalareaPage.js';
 import LettingsPage from './js/js-components/LettingsPage.js';
 import SalesPage from './js/js-components/SalesPage.js';
-import Footer from './js/js-elements/Footer.js';
+import Footer from './js/js-elements/Footer';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
 class App extends Component {
   constructor(props) {
     super(props);

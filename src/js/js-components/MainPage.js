@@ -1,11 +1,12 @@
+/* eslint-disable no-unused-vars */
 import React, { Component } from 'react';
-import NavbarLeft from '../js-elements/NavbarLeft.js';
-import NavbarRight from '../js-elements/NavbarRight.js'
-import OverlayWidget from '../js-elements/OverlayWidget.js';
-import Gallery from '../js-elements/Gallery.js'
-import AboutImage from '../js-elements/AboutImage.js';
+import NavbarLeft from '../js-elements/Navbar/NavbarLeft';
+import NavbarRight from '../js-elements/Navbar/NavbarRight'
+import OverlayWidget from '../js-elements/OverlayWidget/';
+import Gallery from '../js-elements/Gallery/'
+import AboutImage from '../js-elements/About/ImageCard';
+import SearchBar from '../js-elements/SearchBar/'
 import Reveal from 'react-reveal/Reveal';
-import SearchBar from '../js-elements/SearchBar.js'
 
 export default class MainPage extends Component {
 
@@ -42,8 +43,7 @@ export default class MainPage extends Component {
                  ></AboutImage>
             </div>
             </Reveal>
-
-            <OverlayWidget leftPos="20px" bottom="50px"></OverlayWidget>
+            <OverlayWidget bottom="50px" leftPos="20px"></OverlayWidget>
             </div>
         );
     }

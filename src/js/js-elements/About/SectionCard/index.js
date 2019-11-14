@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
+/* eslint-disable no-unused-vars */
+import React, { Component }  from 'react';
 
-class AboutSection extends Component {
+class ImageCard extends Component {
     render() {
         return (
                 <div className={this.props.className} style={{backgroundImage: this.props.background, height: "600px", position: "relative"}} >
@@ -22,4 +23,4 @@ class AboutSection extends Component {
     }
 }
 
-export default AboutSection;
+export default ImageCard;

@@ -146,7 +146,7 @@ code {
 }
 
 .container {
-  width:100%;
+  width: 100%;
   text-align: center;
 }
 .container-mainpage {
@@ -155,7 +155,7 @@ code {
   margin-left: var(--navbar-left-width) !important;
 }
 
-ul.navbar-fp {
+ul.navbar-fp, ul.searchbar {
   padding: 0;
   margin: 0;
   background-color: var(--theme-snow-white);
@@ -176,7 +176,7 @@ div.navbar-fp-container {
   margin-right: auto;
 }
 
-ul.navbar-fp li {
+ul.navbar-fp li, ul.searchbar li {
   display:inline-block;
   margin: 0;
   padding:1.5rem;
@@ -326,9 +326,6 @@ h1 {
   color: var(--theme-dark-blue);
 }
 
-button {
-  margin: 1rem;
-}
 
 .email-form a, button.first {
   text-decoration: none;
@@ -420,7 +417,17 @@ button.third {
   border-width: 0px 0px 0px 2px;
 }
 
-.email-form input, .email-form textarea {
+.searchbar input {
+  background-color: #fff;
+  text-decoration: none;
+  padding: 0.75rem 0.75rem 0.75rem 0.5rem;
+  width: 30vw;
+  overflow: hidden;
+  border-bottom: 2px solid var(--theme-light-blue);
+  border-width: 0px 0px 2px 0px;
+  border-radius: 5px;
+}
+.email-form input, .email-form textarea, .inputfield {
   background-color: var(--theme-snow-white);
   text-decoration: none;
   padding: 0.75rem 0.75rem 0.75rem 0.5rem;
@@ -475,7 +482,10 @@ button.third {
 }
 
 .gallery {
-  width: calc(98.4vw - var(--navbar-left-width) - var(--navbar-left-width));
+  display: block;
+  width: calc(98vw - var(--navbar-left-width) - var(--navbar-left-width));
+  margin-right: auto;
+  margin-top: auto;
   height: 510px;
 }
 

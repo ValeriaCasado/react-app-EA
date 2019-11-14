@@ -23,7 +23,7 @@ class Gallery extends Component {
                 <div style={{backgroundColor: "black", width: "20%", height: "300px", marginTop: ""}} className="o01 gallery-item">
 
                 </div>
-                <div style={{backgroundColor: "black", width: "20.88%", height: "600px", marginTop: "-300px"}} className="i02 gallery-item">
+                <div style={{backgroundColor: "black", width: "20.4%", height: "600px", marginTop: "-300px"}} className="i02 gallery-item">
                     
                 </div>
                 </div>
