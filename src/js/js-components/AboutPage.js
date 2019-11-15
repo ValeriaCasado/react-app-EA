@@ -8,7 +8,8 @@ import SearchBar from '../js-elements/SearchBar/'
 export default class AboutPage extends Component {
     render() {
         return(
-            <div className="container row">
+            <div className="container">
+                <div className="row">
                 <SectionCard className="column cm-two-thirds i02" initialOp="0.7"></SectionCard>
                 <ImageCard className="column cm-one-third p01"
                 height="700px"
@@ -17,6 +18,7 @@ export default class AboutPage extends Component {
                 content="We’re end-to-end real estate advisors and negotiators. 
                         Achieving the best outcome for your situation is our motivation"></ImageCard>
                 <OverlayWidget bottom="50px" leftPos="20px"></OverlayWidget>
+                </div>
             </div>
         );
     }
