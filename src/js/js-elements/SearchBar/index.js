@@ -16,7 +16,7 @@ const bodyholder = {
     marginTop: '10px', 
     marginBottom: '10px',
     display: 'inline-block',
-    width: '90vw'
+    width: '100%'
 }
 const inputSearch = {
     minWidth: '34vw',

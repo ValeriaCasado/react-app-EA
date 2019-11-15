@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import CallText from '../js-elements/About/CallText';
 import ContactForm from '../js-elements/Contact';
-import OverlayWidget from '../js-elements/OverlayWidget/';
+import OverlayWidget from '../js-elements/Overlay/OverlayWidget/';
 
 export default class ContactPage extends Component {
     render() {

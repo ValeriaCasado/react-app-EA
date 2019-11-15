@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import RTlogo from '../../../img/icons/RT-logo.png';
+import RTlogo from '../../../../img/icons/RT-logo.png';
 
 class OverlayWidget extends Component {
 

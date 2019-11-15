@@ -7,7 +7,7 @@
   --theme-yellow-light: #fff2d9;
   --theme-snow-white: #F3F3F1;
   --half-screen: 50vw;
-  --navbar-left-width: 5rem;
+  --navbar-left-width: 5.6rem;
 }
 
 p {
@@ -66,7 +66,6 @@ code {
     width: 100% !important;
     margin: 0rem !important;
     display: inline-block;
-    text-align: center;
   }
 
   .gallery-text{
@@ -102,6 +101,14 @@ code {
     float: left;
     display: block;
   }
+}
+
+@media only screen and (max-width: 1000px) {
+
+  div.gallery {
+    display: none;
+  }
+
 }
 
 .row:after {
@@ -154,8 +161,14 @@ code {
   margin: 1rem;
 }
 
+.makespace2 {
+  padding: 2rem;
+  margin: 2rem;
+}
+
 .containerv {
   width: 100%;
+  display: inline-block;
   text-align: center;
 }
 .container-mainpage {
@@ -251,7 +264,7 @@ img.TR-widget {
   z-index: 1;
   top: 0;
   left: 0;
-  width: 5rem;
+  width: var(--navbar-left-width) !important;
   overflow: hidden;
   background-color: var(--theme-snow-white);
   overflow-x: hidden;
@@ -264,10 +277,10 @@ img.TR-widget {
   margin-left:auto;
   margin-right: auto;
   position: fixed;
-  z-index: 3;
+  z-index: 1;
   top: 0;
   right: 0;
-  width: 5rem;
+  width: var(--navbar-left-width) !important;
   overflow: hidden;
   background-color: var(--theme-snow-white);
   overflow-x: hidden;
@@ -276,11 +289,8 @@ img.TR-widget {
 }
 
 .navbar-left img {
-  padding: 1.5rem;
-  text-decoration: none;
-  font-size: 2px;
-  width: 1.5rem;
-  display: block;
+  padding: 1.3rem;
+  margin: 1rem 0rem 1rem 0rem;
 }
 
 .navbar-left-brand img{
@@ -293,9 +303,7 @@ img.TR-widget {
 
 
 .navbar-left a img:hover{
-  padding: 1.5rem 1rem 1.2rem 1.5rem;
-  width: 1.8rem;
-  
+  padding: 1rem;
 }
 
 .front-page-img {
@@ -480,7 +488,6 @@ button.third {
 
 .important:hover, .callText #number {
   transition: 0.5;
-  text-align: center;
   font-weight: bold;
   color: black !important;
 }
@@ -491,11 +498,10 @@ button.third {
 }
 
 .gallery {
-  display: block;
-  width: calc(98vw - var(--navbar-left-width) - var(--navbar-left-width));
-  margin-right: auto;
-  margin-top: auto;
-  height: 510px;
+  display: table;
+  width: calc(100vw - var(--navbar-left-width) - var(--navbar-left-width));
+  margin-right: 0 auto;
+  margin-left: 0 auto;
 }
 
 .gallery-item {
@@ -547,7 +553,7 @@ button.third {
   opacity: 0;
 }
 
-.fadein-effect, .signature:hover, .overlay-image-section:hover, .overlay-about-section:hover, .gallery-item:hover .gallery-text{
+.fadein-effect, .signature:hover, .overlay-image-section:hover, .about-section:hover, .gallery-item:hover .gallery-text{
   opacity: 0.9 !important;
   transition: 0.5s;
 }
@@ -563,16 +569,16 @@ button.third {
   border: 2px solid var(--theme-medium-blue);
 }
 
-.overlay-about-section {
-  opacity: 1;
+div.about-section {
+  display: inline-block;
   background: var(--theme-snow-white);
-  color: var(--theme-dark-blue);
-  height: max-content;
-  padding: inherit;
-  margin: inherit;
+  padding: 1rem;
 }
 .underlay-image-section {
+  padding: 2rem;
+  margin: 2rem;
   height: 700px;
+  width: 100%;
   background-position: center;
   background-size: cover;
 }

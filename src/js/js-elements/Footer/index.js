@@ -29,7 +29,7 @@ const footerMap = {
 export default class Footer extends Component {
     render() {
         return(
-            <div className="container" style={{backgroundColor: "#F3F3F1"}}>
+            <div className="container" style={{backgroundColor: "#F3F3F1", width: "100%"}}>
             <footer className="row align-items-start footer" style={footerStyle}>
                 <div className="col-md-4" style={footerElement} >
                     <h1 style={{margin: "0 !important"}}>Taylor and co</h1>
