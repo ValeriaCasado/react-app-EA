@@ -24,13 +24,18 @@ export default class MainPage extends Component {
             <div className="container">
             <Reveal>
             <div className="row">
-                <AboutImage className="col-6 o01" 
-                width="38rem"
+                <AboutImage className="col-xs-6 makespace o01" 
+                width="35rem"
                 height="200px"
                 insideHeight="130px"
                 ></AboutImage>
-                <AboutImage className="col-6 i01"
-                width="38rem"
+                <AboutImage className="col-xs-6 makespace i01"
+                width="35rem"
+                 height="200px"
+                 insideHeight="130px"
+                 ></AboutImage>
+                 <AboutImage className="col-xs-6 makespace i01"
+                width="35rem"
                  height="200px"
                  insideHeight="130px"
                  ></AboutImage>
@@ -38,16 +43,21 @@ export default class MainPage extends Component {
             </Reveal>
             <Reveal>
             <div className="row">
-                <AboutImage className="col-6 i02" 
-                width="38rem"
+                <AboutImage className="col-xs-6 makespace i02" 
+                width="35rem"
                 height="200px"
                 insideHeight="130px"
                 ></AboutImage>
-                <AboutImage className="col-6 p02"
-                width="38rem"
+                <AboutImage className="col-xs-6 makespace p02"
+                width="35rem"
                 height="200px"
                 insideHeight="130px"
                  ></AboutImage>
+                 <AboutImage className="col-xs-6 makespace i02" 
+                width="35rem"
+                height="200px"
+                insideHeight="130px"
+                ></AboutImage>
             </div>
             </Reveal>
             </div>

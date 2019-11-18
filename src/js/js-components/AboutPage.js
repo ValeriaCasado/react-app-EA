@@ -12,7 +12,8 @@ export default class AboutPage extends Component {
                 <div className="row">
                     <div className="col-12 col-md-8"><SectionCard className="col i02" initialOp="0.7"></SectionCard></div>
                     <div className="col-6 col-md-4">
-                        <ImageCard className=" p01"
+                        <ImageCard 
+                        className="makespace2 p01"
                         height="700px"
                         width="100%"
                         insideHeight="90%"
